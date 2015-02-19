@@ -1,0 +1,80 @@
+MPLINK 4.48, Linker
+Linker Error Map File - Created Thu Feb 19 17:37:35 2015
+
+*Warning* - This is only a partial map file due to a link time error.
+   Only sections which were allocated prior to the error are shown below.
+
+CODEPAGES:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+   vectors     0x0000     0x0029           _entry_scn     0x0000     0x0006
+                                          high_vector     0x0008     0x0018
+
+      page     0x002a     0x4fff               .cinit     0x002a     0x0092
+                                          .code_ias.o     0x00bc     0x2828
+                                           .code_UI.o     0x28e4     0x107e
+                                          .code_lcd.o     0x3962     0x0454
+                                 .code_communication.o     0x3db6     0x0448
+                                  .code_uart_driver.o     0x41fe     0x0354
+                                        .code_timer.o     0x4552     0x026c
+                                 .code_keypad_driver.o     0x47be     0x01f4
+                                               STRING     0x49b2     0x0104
+                                         .code_main.o     0x4ab6     0x00e8
+                                           _cinit_scn     0x4b9e     0x009e
+                                        .code_uopen.o     0x4c3c     0x008a
+                                         .stringtable     0x4cc6     0x0081
+                                      .code_write_B.o     0x4d48     0x0066
+                                        .romdata_UI.o     0x4dae     0x0064
+                                     .code_fxd3232u.o     0x4e12     0x0048
+                                        .code_board.o     0x4e5a     0x0046
+                                       .code_read_B.o     0x4ea0     0x0044
+                                       .code_t1open.o     0x4ee4     0x0042
+                                        .code_uread.o     0x4f26     0x003e
+                                                 PROG     0x4f64     0x003c
+                                      .code_t1write.o     0x4fa0     0x0038
+
+    idlocs     0x0000     0x0007                                           
+
+    config     0x0000     0x000d .config_300001_main.o     0x0001     0x0001
+                                 .config_300002_main.o     0x0002     0x0001
+                                 .config_300003_main.o     0x0003     0x0001
+                                 .config_300005_main.o     0x0005     0x0001
+                                 .config_300006_main.o     0x0006     0x0001
+                                 .config_300008_main.o     0x0008     0x0001
+                                 .config_300009_main.o     0x0009     0x0001
+                                 .config_30000a_main.o     0x000a     0x0001
+                                 .config_30000b_main.o     0x000b     0x0001
+                                 .config_30000c_main.o     0x000c     0x0001
+                                 .config_30000d_main.o     0x000d     0x0001
+
+     devid     0xfffe     0xffff                                           
+
+    eedata     0x0000     0x00ff                                           
+
+
+SHAREBANKS:
+
+DATABANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+      gpr0     0x0080     0x00ff               .stack     0x0080     0x0080
+
+      GPR1     0x0100     0x03ff              iasdata     0x0100     0x0176
+                                              logdata     0x0276     0x0037
+
+      GPR2     0x0400     0x04ff              ui_data     0x0400     0x007a
+                                             LCD_DATA     0x047a     0x0022
+                                          KEYPAD_DATA     0x049c     0x0012
+
+      GPR4     0x0500     0x05ff             uartdata     0x0500     0x006a
+                                             com_data     0x056a     0x0078
+
+
+ACCESSBANKS:
+    Memory      Start        End              Section    Address Size(Bytes)
+ ---------  ---------  ---------            ---------  ---------  ---------
+ accessram     0x0000     0x007f                                           
+
+ accesssfr     0x0f80     0x0fff        SFR_UNBANKED0     0x0f80     0x0080
+
+
